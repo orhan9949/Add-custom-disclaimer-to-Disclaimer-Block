@@ -1,0 +1,47 @@
+// ==========================================================================
+// Disclaimer Block
+// ==========================================================================
+
+.block-disclaimer {
+  position: relative;
+  margin: 40px 0;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid var(--color-gray-30);
+
+  @include dark {
+    border-color: var(--color-gray-70);
+  }
+}
+
+.block-disclaimer__icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -12px;
+  left: 20px;
+  width: 24px;
+  height: 24px;
+  border: 1px solid var(--color-gray-30);
+  border-radius: 50%;
+  background-color: var(--content-bg);
+  color: var(--color-blue);
+
+  .icon {
+    width: 6px;
+    height: 14px;
+  }
+
+  @include dark {
+    border-color: var(--color-gray-70);
+    color: var(--color-gray-30);
+  }
+}
+
+.block-disclaimer__content {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--text-color-alt);
+}
